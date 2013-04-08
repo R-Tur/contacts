@@ -1,9 +1,8 @@
 define([],
-  function(){
-    return {
-      views: {},
-	  models: {},
-	  collections: {}
-    };
-  }
-);
+	function () {
+	return {
+		views : {},
+		models : {},
+		collections : {}
+	};
+});
