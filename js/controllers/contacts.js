@@ -1,7 +1,7 @@
-define(['views/contacts', 'collections/contacts', 'app/global'],
-	function (View, Collection, global) {
-	var coll = global.collections.contacts = new Collection();
-	var view = global.views.contacts = new View(global.collections.contacts);
+define(['views/contacts', 'collections/contacts'],
+	function (View, Collection) {
+	var coll =  new Collection();
+	var view = new View(coll);
 	return function (global) {
 		coll.fetch({
 			success : function () {

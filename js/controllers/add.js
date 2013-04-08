@@ -1,9 +1,9 @@
-define(['views/add', 'models/contact', 'app/global'],
-	function (Add, Model, global) {
-	global.models.contact = new Model();
-	global.views.add = new Add(global.models.contact);
+define(['views/add', 'models/contact'],
+	function (Add, Model) {
+	var model = new Model();
+	var view = new Add(model);
 	return function () {
-		global.models.contact.clear();
-		global.views.add.render();
+		model.clear();
+		view.render();
 	}
 });

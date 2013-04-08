@@ -1,12 +1,12 @@
-define(['views/edit', 'models/contact', 'app/global'],
-	function (Edit, Model, global) {
-	var model = global.models.contact = new Model();
-	var edit = global.views.edit = new Edit(global.models.contact);
+define(['views/edit', 'models/contact'],
+	function (Edit, Model) {
+	var model = new Model();
+	var view =  new Edit(model);
 	return function (id) {
 		model.set("id", id);
 		model.fetch({
 			success : function (data) {
-				edit.render();
+				view.render();
 			}
 		});
 	}
