@@ -1,0 +1,18 @@
+.center {
+	left: 40%;
+	top: 10%;
+	position: absolute;
+}
+.name{
+  width: 200px;
+  margin-top: 2px;
+  background: #D3D3D3;
+}
+.edit{
+  background: #E6E6FA;	
+  float: right;
+  width: 40px;
+}
+.view{
+  cursor: pointer;
+}

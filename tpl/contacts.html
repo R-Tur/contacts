@@ -1,0 +1,15 @@
+<div class="center">
+<% _.each(items, function(item){%> 
+<div class="name" data-id=<%=item['id']%> >
+  <span class="view">
+    <%=item["name"]%> 
+  </span>
+  <a href="#" class="edit">Edit</a>
+</div>
+<%});%>
+<div style="float:right">
+<a href="#" class="add_contact">New Contact</a>
+</div>
+</div>
+
+ 
